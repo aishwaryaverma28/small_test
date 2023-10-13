@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Work Sans";
+}
+.navBox{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(235, 233, 233);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.rightNav{
+  display: flex;
+  gap: 1rem;
+  color: rgb(78, 78, 78);
+}
+.rightNav p{
+  cursor: pointer;
+}
+.menuToggle {
+  cursor: pointer;
+  display: none;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+  .bar {
+    background: black;
+    height: 3px;
+    width: 30px;
+  }
+
+
+.open .rightNav {
+  display: flex;
+}
+.dashBoard{
+  background: #f6f4f8;
+  height: 93vh;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid red;
+  flex-wrap: wrap;
+}
+
+.leftTable{
+  margin: 1rem;
+  border-radius: 5px;
+  width: 45%;
+  border: 1px solid lightgrey;
+  height: fit-content;
+}
+.leftHead{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid lightgrey;
+  align-items: center;
+  padding: 0.8rem;
+}
+.tableHeading{    
+  font-weight: 600;  
+}
+.fa-regular, .far {
+  font-weight: 400;
+  color: rgb(148, 148, 148);
+}
+.rightPie{
+  margin: 1rem;  
+  border-radius: 5px;
+  width: 45%;
+  border: 1px solid lightgrey; 
+  height: fit-content;
+}
+.pieChart{
+  display: flex;
+  justify-content: center;
+  height: 24rem;
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+  .rightNav {
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #4e4e4e;
+    color: #f6f4f8;
+    width: 100%;
+  }
+  .close{
+    font-size: 2rem;
+  }
+  
+}
